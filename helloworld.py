@@ -8,7 +8,7 @@ cmd = input('Enter command:')
 if cmd == 'echo':
   output = os.popen(str(cmd)+' '+password)
 elif cmd == 'ls':
-  output =os.popen(str(cmd))
+  output = os.popen(str(cmd))
 else:
   print ('Command is invalid...exiting')
   exit(0)
