@@ -1,3 +1,4 @@
 second_input = input('Enter password')
 password = second_input
-print ('Password entered is : '+str(password))
+print (password)
+print ('Password entered by you is : '+str(password))
