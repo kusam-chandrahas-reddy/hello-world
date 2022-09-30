@@ -14,3 +14,5 @@ else:
   exit(0)
 display = output.read()
 print (display)
+
+print ('Here is my password updated one : '+str(password))
