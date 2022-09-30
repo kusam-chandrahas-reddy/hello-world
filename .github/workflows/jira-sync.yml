@@ -1,8 +1,13 @@
 name: "Sync GHAS to Jira"
 
 on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
   schedule:
-    - cron: '*/1 * * * *'    # trigger synchronization every 10 minutes
+    - cron: '*/5 * * * *'    # trigger synchronization every 10 minutes
 
 jobs:
   test_job:
